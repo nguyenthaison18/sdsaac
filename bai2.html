@@ -2,16 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>bai2</title>
+    <title>Title</title>
 </head>
 <body>
-<input type="text" id="a">
-<input type="text" id="b"><br><br>
-<button type="button" onclick="cong()">cong(+)</button>
-<button type="button" onclick="tru()">tru(-)</button>
-<p id="p"></p>
-</body>
-<script>
+<form>
+    <label>Amound:</label>
+    <input type="number" name="amount" id="amount" value="0.0"/>
+    <label>From Currency:</label>
+    <select id="currency" name="currency">
+        <option value="USD">USD</option>
+        <option value="VND">VND</option>
+    </select>
+    <label>To Currency:</label>
+    <select id="currency1" name="currency1">
+        <option value="USD">USD</option>
+        <option value="VND">VND</option>
+    </select>
+    <button type="button" value="Convert" onclick="doitien()">click</button>
+    <p id="ketqua">Result:</p>
+</form>
 
-</script>
+<script src="convert.js"></script>
+</body>
 </html>
