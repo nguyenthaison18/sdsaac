@@ -1,10 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>bai1</title>
 </head>
 <body>
-$END$
+<input type="text" id="a">
+<input type="text" id="b"><br><br>
+<button type="button" value="+" onclick="cong()">cong(+)</button>
+<button type="button" value="-" onclick="tru()">tru(-)</button>
+<button type="button" value="*" onclick="nhan()">nhan(*)</button>
+<button type="button" value="/" onclick="chia()">chia(%)</button>
+<p id="kq"></p>
+<script>
+    function cong()
+    {
+        let inputa = document.getElementById('a').value;
+        let a=parseInt(inputa);
+        let inputb = document.getElementById('b').value;
+        let b=parseInt(inputb);
+        document.getElementById('kq').innerHTML = +a+b;
+    }
+
+    function tru()
+    {
+        let inputa = document.getElementById('a').value;
+        let a=parseInt(inputa);
+        let inputb = document.getElementById('b').value;
+        let b=parseInt(inputb);
+        document.getElementById('kq').innerHTML = +a-b;
+    }
+    function nhan()
+    {
+        let inputa = document.getElementById('a').value;
+        let a=parseInt(inputa);
+        let inputb = document.getElementById('b').value;
+        let b=parseInt(inputb);
+        document.getElementById('kq').innerHTML = +a*b;
+    }
+    function chia()
+    {
+        let inputa = document.getElementById('a').value;
+        let a=parseInt(inputa);
+        let inputb = document.getElementById('b').value;
+        let b=parseInt(inputb);
+        document.getElementById('kq').innerHTML = +a/b;
+    }
+
+</script>
 </body>
 </html>
